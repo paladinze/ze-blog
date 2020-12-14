@@ -13,12 +13,18 @@ export default function Footer() {
             >
               GitHub
             </a>
-            <a
-              href={`/`}
-              className="mx-3 font-bold hover:underline"
+            <div className="flex flex-col lg:flex-row items-center justify-center"
             >
-              Copyright © 2020 Paladinze.com
-            </a>
+              <div>
+                Copyright © 2020 Paladinze.com
+              </div>
+              <a
+                  href={`http://beian.miit.gov.cn/`}
+                  className="mx-3 hover:underline"
+              >
+                鄂ICP备2020022280号
+              </a>
+            </div>
           </div>
         </div>
       </Container>

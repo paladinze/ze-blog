@@ -4,7 +4,6 @@ import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import Image from "next/image";
 
 export default function Index({ allPosts }) {
   const morePosts = allPosts.slice(0)
