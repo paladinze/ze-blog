@@ -28,7 +28,6 @@ export default function Post({ post, morePosts, preview }) {
                 <title>
                   {post.title} | Ze Blog
                 </title>
-                <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader
                 title={post.title}
