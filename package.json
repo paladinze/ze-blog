@@ -2,10 +2,9 @@
   "name": "ze-blog",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build && next export",
-    "start": "npm run build && next start",
-    "deploy:oss": "npm run build && node tools/oss-upload.js"
+    "start": "npm run build && next start"
   },
   "dependencies": {
     "classnames": "2.2.6",

@@ -4,27 +4,31 @@ import CoverImage from './cover-image'
 import Link from 'next/link'
 
 export default function PostPreview({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}) {
+                                      title,
+                                      coverImage,
+                                      date,
+                                      excerpt,
+                                      author,
+                                      slug,
+                                      externalLink,
+                                    }) {
+  const linkHref = externalLink || "/posts/[slug]";
+  const linkAs = externalLink ? undefined : `/posts/${slug}`;
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+    <Link as={linkAs} href={linkHref}>
+      <div className="cursor-pointer  px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+        <div className="mb-5">
+          <CoverImage slug={slug} title={title} src={coverImage}/>
+        </div>
+        <h3 className="text-3xl mb-3 leading-snug">
+          <a>{title}</a>
+        </h3>
+        <div className="text-lg mb-4">
+          <DateFormatter dateString={date}/>
+        </div>
+        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
-        </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
-      </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-    </div>
+    </Link>
   )
 }
