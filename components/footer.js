@@ -1,5 +1,4 @@
 import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
 
 export default function Footer() {
   return (
@@ -7,6 +6,12 @@ export default function Footer() {
       <Container>
         <div className="py-8 flex flex-col lg:flex-row items-center justify-center">
           <div className="flex flex-col lg:flex-row justify-center items-center lg:w-1/2">
+            <a
+              href="https://shaderly.com"
+              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+            >
+              Home Planet
+            </a>
             <a
               href="https://github.com/paladinze"
               className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
@@ -16,14 +21,8 @@ export default function Footer() {
             <div className="flex flex-col lg:flex-row items-center justify-center"
             >
               <div>
-                Copyright © 2020 Paladinze.com
+                Copyright © 2022 shaderly.com
               </div>
-              <a
-                  href={`http://beian.miit.gov.cn/`}
-                  className="mx-3 hover:underline"
-              >
-                鄂ICP备2020022280号
-              </a>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Paladinze</title>
+          <title>Ze Cheng</title>
         </Head>
         <Container>
           <Intro />
