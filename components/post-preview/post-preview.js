@@ -1,6 +1,5 @@
-import Avatar from '../components/avatar'
-import DateFormatter from '../components/date-formatter'
-import CoverImage from './cover-image'
+import DateFormatter from '../../utils/date-formatter'
+import CoverImage from '../common/cover-image'
 import Link from 'next/link'
 
 export default function PostPreview({
@@ -16,7 +15,7 @@ export default function PostPreview({
   const linkAs = externalLink ? undefined : `/posts/${slug}`;
   return (
     <Link as={linkAs} href={linkHref}>
-      <div className="cursor-pointer  px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+      <div className="cursor-pointer  px-4 py-6 rounded-lg transform transition duration-500 hover:scale-105">
         <div className="mb-5">
           <CoverImage slug={slug} title={title} src={coverImage}/>
         </div>
@@ -27,7 +26,6 @@ export default function PostPreview({
           <DateFormatter dateString={date}/>
         </div>
         <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-
       </div>
     </Link>
   )

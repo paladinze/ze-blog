@@ -1,9 +1,10 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
+import Container from '../components/layout/container'
+import MoreStories from '../components/post-preview/more-stories'
+import Intro from '../components/layout/intro'
+import Layout from '../components/layout/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
+import TabMenu from "../components/menu/tab-menu";
 
 export default function Index({ allPosts }) {
   const morePosts = allPosts.slice(0)
@@ -15,6 +16,7 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro />
+          <TabMenu />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
