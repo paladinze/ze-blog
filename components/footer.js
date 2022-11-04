@@ -18,12 +18,13 @@ export default function Footer() {
             >
               GitHub
             </a>
-            <div className="flex flex-col lg:flex-row items-center justify-center"
-            >
-              <div>
-                Copyright © 2022 shaderly.com
-              </div>
-            </div>
+          </div>
+        </div>
+      </Container>
+      <Container >
+        <div className="pb-8 flex flex-col lg:flex-row items-center justify-center">
+          <div>
+            Copyright © 2022 shaderly.com
           </div>
         </div>
       </Container>
