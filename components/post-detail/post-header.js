@@ -10,8 +10,8 @@ export default function PostHeader({title, coverImage, date, author}) {
         <CoverImage title={title} src={coverImage}/>
       </div>
       <div className="max-w-2xl mx-auto">
-        <div className="mb-6 text-lg">
-          <DateFormatter dateString={date}/>
+        <div className="mb-6 text-lg text-slate-500">
+          📆 <DateFormatter dateString={date}/>
         </div>
       </div>
     </>

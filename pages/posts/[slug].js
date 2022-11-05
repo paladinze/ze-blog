@@ -1,24 +1,24 @@
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/layout/container'
 import PostBody from '../../components/post-detail/post-body'
 import HeaderSignature from '../../components/post-detail/header-signature'
 import PostHeader from '../../components/post-detail/post-header'
 import Layout from '../../components/layout/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import {getAllPosts, getPostBySlug} from '../../lib/api'
 import PostTitle from '../../components/post-detail/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({post, morePosts, preview}) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage statusCode={404}/>
   }
   return (
     <Layout preview={preview}>
       <Container>
-        <HeaderSignature />
+        <HeaderSignature/>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
@@ -35,7 +35,7 @@ export default function Post({ post, morePosts, preview }) {
                 date={post.date}
                 author={post.author}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.content}/>
             </article>
           </>
         )}
@@ -44,7 +44,7 @@ export default function Post({ post, morePosts, preview }) {
   )
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({params}) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',

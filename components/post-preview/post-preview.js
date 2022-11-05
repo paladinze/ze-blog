@@ -22,8 +22,8 @@ export default function PostPreview({
         <h3 className="text-3xl mb-3 leading-snug">
           <a>{title}</a>
         </h3>
-        <div className="text-lg mb-4">
-          <DateFormatter dateString={date}/>
+        <div className="text-lg mb-4 text-slate-500">
+          📆 <DateFormatter dateString={date}/>
         </div>
         <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       </div>

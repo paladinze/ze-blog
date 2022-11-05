@@ -5,7 +5,6 @@ A minimalistic blog based on markdown, React & Next.js
 ### init
 
 ```bash
-# install local dependencies
 npm install
 ```
 
