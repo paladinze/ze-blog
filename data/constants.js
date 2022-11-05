@@ -33,6 +33,11 @@ export const PROJECT_LINKS = [
     tag: TAGS.WEB3D
   },
   {
+    name: 'Galaxy particle simulation',
+    url: 'https://galaxy-olive.vercel.app/',
+    tag: TAGS.WEB3D
+  },
+  {
     name: 'Best of Flutter',
     url: 'https://github.com/paladinze/best-of-flutter',
     tag: TAGS.TOOL
