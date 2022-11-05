@@ -1,12 +1,11 @@
 import {CONTACT_INFO, PROJECT_LINKS} from "../data/constants";
+import Link from "next/link";
 
 function LinkButton(props) {
-  return <a
-    href={props.url}
-    className={`mr-3 bg-white hover:bg-gray-700 hover:text-white border border-black text-black font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-4 ${props.className}`}
-  >
-    {props.name}
-  </a>
+  return <Link href={props.url}>
+    <div
+      className={`mr-3 bg-white hover:bg-gray-700 hover:text-white border border-black text-black font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-4 ${props.className}`}>{props.name}</div>
+  </Link>
 }
 
 function SubTitle(props) {
@@ -32,8 +31,6 @@ function Contact(props) {
   </Section>
 }
 
-
-
 export function Job(props) {
   return <div className={"mb-3"}>
     <h3 className="mb-2 text-lg md:text-1xl  tracking-tighter leading-tight">
@@ -43,12 +40,11 @@ export function Job(props) {
   </div>
 }
 
-
 export default function About() {
   return <>
     <div>
       <div className={"relative container mx-auto px-5 py-16 max-w-3xl"}>
-        <LinkButton name={'HOME'} url={'/'} className="absolute right-0" />
+        <LinkButton name={'HOME'} url={'/'} className="absolute right-0"/>
         <header className="mb-8">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">Ze Cheng</h1>
           <h2 className="mb-2 text-1xl md:text-2xl font-bold tracking-tight leading-tight">Software Engineer</h2>
@@ -56,7 +52,7 @@ export default function About() {
             that draws pictures on computers 😇. </p>
         </header>
 
-        <Contact />
+        <Contact/>
 
         <Section>
           <SubTitle text={'🧮 Employment'}/>

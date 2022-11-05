@@ -2,6 +2,7 @@
 title: 'Dart Fundamentals'
 coverImage: '/assets/blog/dart/dart.jpg'
 date: '2021-01-16T05:35:07.322Z'
+tag: 'lab'
 ---
 
 ## NULL aware

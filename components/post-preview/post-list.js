@@ -1,6 +1,6 @@
 import PostPreview from './post-preview'
 
-export default function MoreStories({posts}) {
+export default function PostList({posts}) {
   return (
     <section>
       <div className="mx-auto mb-32 grid grid-cols-1 md:grid-cols-2 md:gap-y-32 xl:grid-cols-3">

@@ -1,5 +1,12 @@
 export const CMS_NAME = 'Markdown'
 
+
+export const TAGS = {
+  PROJECT: 'project',
+  LAB: 'lab',
+}
+export const DEFAULT_TAG = TAGS.PROJECT;
+
 export const PROJECT_LINKS = [
   {
     name: 'Zefolio',
