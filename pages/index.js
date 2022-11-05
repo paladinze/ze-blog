@@ -6,15 +6,19 @@ import {getAllPosts} from '../lib/api'
 import Head from 'next/head'
 import TabMenu from "../components/menu/tab-menu";
 import {useMemo, useState} from "react";
-import {DEFAULT_TAG, POST_METADATA_FIELDS} from "../data/constants";
+import {DEFAULT_TAG, POST_METADATA_FIELDS, TAGS} from "../data/constants";
 
 
 export default function Index({allPosts}) {
   const [tag, setSelectedTag] = useState(DEFAULT_TAG);
-  const filteredPosts = useMemo(() =>
-    allPosts.filter(
+  const filteredPosts = useMemo(() => {
+    if (tag === TAGS.ALL) {
+      return allPosts;
+    }
+    return allPosts.filter(
       item => item.tags?.includes(tag)
-    ), [tag]);
+    );
+  }, [tag]);
   return (
     <>
       <Layout>
@@ -26,7 +30,7 @@ export default function Index({allPosts}) {
           <TabMenu
             selectedTag={tag}
             setSelectedTag={setSelectedTag}/>
-          <PostList posts={filteredPosts}/>
+          <PostList posts={filteredPosts} />
         </Container>
       </Layout>
     </>

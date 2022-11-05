@@ -27,6 +27,10 @@ function TabLink(props) {
 
 const tabsData = [
   {
+    label: 'All',
+    tag: TAGS.ALL,
+  },
+  {
     label: 'Projects',
     tag: TAGS.PROJECT,
   },
@@ -43,7 +47,7 @@ const tabsData = [
 export default function TabMenu(props) {
   const {selectedTag, setSelectedTag} = props;
   return <section>
-    <ul className="px-4 flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 ">
+    <ul className="px-4 flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-500 ">
       {tabsData.map(({label, link, tag}, index) => {
         return <TabLink
           key={index} label={label} link={link}

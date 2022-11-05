@@ -14,12 +14,13 @@ export const POST_METADATA_FIELDS = [
 ];
 
 export const TAGS = {
+  ALL: 'all',
   PROJECT: 'project',
   LAB: 'lab',
   WEB3D: 'web3d',
   TOOL: 'tool'
 }
-export const DEFAULT_TAG = TAGS.PROJECT;
+export const DEFAULT_TAG = TAGS.ALL;
 
 export const PROJECT_LINKS = [
   {
