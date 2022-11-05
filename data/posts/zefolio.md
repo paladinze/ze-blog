@@ -1,5 +1,5 @@
 ---
-title: 'Zefolio'
+title: 'Huoshui Course Review'
 coverImage: '/assets/blog/zefolio/zefolio.jpg'
 projectLink: 'https://shaderly.com'
 repoLink: 'https://github.com/paladinze/guts/tree/main/apps/cg/zefolio'

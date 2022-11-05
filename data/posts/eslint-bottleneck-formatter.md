@@ -1,5 +1,5 @@
 ---
-title: 'ESlint Formatter: Bottleneck'
+title: 'Bottleneck ESlint Formatter'
 coverImage: '/assets/blog/eslint-bottleneck-formatter/eslint-bottleneck-formatter.png'
 repoLink: 'https://github.com/paladinze/eslint-formatter-bottleneck'
 date: '2021-12-14'

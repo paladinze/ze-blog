@@ -18,7 +18,7 @@ export default function PostPreview({
         <div className="mb-5">
           <CoverImage slug={slug} title={title} src={coverImage}/>
         </div>
-        <h3 className="truncate text-2xl sm:text-3xl font-medium mb-3 leading-snug">
+        <h3 className="truncate text-2xl lg:text-3xl font-medium mb-3 leading-snug">
           {title}
         </h3>
         <div className="text-base mb-4 text-slate-500">
