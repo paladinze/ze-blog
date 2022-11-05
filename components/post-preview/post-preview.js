@@ -14,7 +14,7 @@ export default function PostPreview({
   const linkAs = externalLink ? undefined : `/posts/${slug}`;
   return (
     <Link as={linkAs} href={linkHref}>
-      <div className="cursor-pointer shadow-lg px-4 py-6 rounded-lg transform transition duration-500 hover:scale-105">
+      <div className="cursor-pointer border-t-2 border-l-1 border-r-2 border-b-2 shadow-lg px-4 py-6 rounded-lg transform transition duration-500 hover:scale-105">
         <div className="mb-5">
           <CoverImage slug={slug} title={title} src={coverImage}/>
         </div>

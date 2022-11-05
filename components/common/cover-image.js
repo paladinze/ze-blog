@@ -5,9 +5,7 @@ export default function CoverImage({title, src, slug}) {
     <img
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn('shadow-small w-full aspect-video', {
-        'hover:shadow-medium transition-shadow duration-200': slug,
-      })}
+      className={cn('w-full aspect-video')}
     />
   )
   return (
