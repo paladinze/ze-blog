@@ -5,13 +5,16 @@ import Layout from '../components/layout/layout'
 import {getAllPosts} from '../lib/api'
 import Head from 'next/head'
 import TabMenu from "../components/menu/tab-menu";
-import {useState} from "react";
-import {DEFAULT_TAG} from "../data/constants";
+import {useMemo, useState} from "react";
+import {DEFAULT_TAG, POST_METADATA_FIELDS} from "../data/constants";
 
 
 export default function Index({allPosts}) {
   const [tag, setSelectedTag] = useState(DEFAULT_TAG);
-  const filteredPosts = allPosts.filter(item => item.tag?.toLowerCase() === tag);
+  const filteredPosts = useMemo(() =>
+    allPosts.filter(
+      item => item.tags?.includes(tag)
+    ), [tag]);
   return (
     <>
       <Layout>
@@ -31,15 +34,7 @@ export default function Index({allPosts}) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'tag',
-    'coverImage',
-    'excerpt',
-    'externalLink'
-  ])
+  const allPosts = getAllPosts(POST_METADATA_FIELDS)
 
   return {
     props: {allPosts},

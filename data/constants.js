@@ -1,5 +1,14 @@
 export const CMS_NAME = 'Markdown'
 
+export const POST_METADATA_FIELDS = [
+  'title',
+  'date',
+  'slug',
+  'tags',
+  'coverImage',
+  'excerpt',
+  'externalLink'
+];
 
 export const TAGS = {
   PROJECT: 'project',
