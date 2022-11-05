@@ -16,13 +16,34 @@ export const POST_METADATA_FIELDS = [
 export const TAGS = {
   PROJECT: 'project',
   LAB: 'lab',
+  WEB3D: 'web3d',
+  TOOL: 'tool'
 }
 export const DEFAULT_TAG = TAGS.PROJECT;
 
 export const PROJECT_LINKS = [
   {
     name: 'Zefolio',
-    url: 'https://shaderly.com'
+    url: 'https://shaderly.com',
+    tag: TAGS.WEB3D
+  },
+  {
+    name: 'Mirage Web3D editor',
+    url: 'https://static.res.qq.com/nav/web3d/editor/index.html?w3d=https://static.res.qq.com/nav/web3d/editor/examples/beautiful-planet/app.w3d',
+    tag: TAGS.WEB3D
+  },
+  {
+    name: 'Best of Flutter',
+    url: 'https://github.com/paladinze/best-of-flutter',
+    tag: TAGS.TOOL
+  }, {
+    name: 'ESLint Formatter Bottleneck',
+    url: 'https://github.com/paladinze/eslint-formatter-bottleneck',
+    tag: TAGS.TOOL
+  }, {
+    name: '2048 - Angel Attack',
+    url: 'https://2048.shaderly.com',
+    tag: TAGS.LAB
   }
 ]
 
