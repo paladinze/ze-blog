@@ -6,6 +6,9 @@ export const POST_METADATA_FIELDS = [
   'slug',
   'tags',
   'coverImage',
+  'projectLink',
+  'repoLink',
+  'content',
   'excerpt',
   'externalLink'
 ];

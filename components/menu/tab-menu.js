@@ -50,7 +50,6 @@ export default function TabMenu(props) {
           selected={selectedTag === tag}
           onClick={() => {
             if (!tag) return;
-            console.log('click')
             setSelectedTag(tag);
           }}
         />

@@ -9,8 +9,9 @@ import {getAllPosts, getPostBySlug} from '../../lib/api'
 import PostTitle from '../../components/post-detail/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
+import {POST_METADATA_FIELDS} from "../../data/constants";
 
-export default function Post({post, morePosts, preview}) {
+export default function Post({post, preview}) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404}/>
@@ -22,22 +23,15 @@ export default function Post({post, morePosts, preview}) {
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Ze Blog
-                </title>
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
-              <PostBody content={post.content}/>
-            </article>
-          </>
+          <article className="mb-32">
+            <Head>
+              <title>
+                {post.title} | Ze Blog
+              </title>
+            </Head>
+            <PostHeader {...post} />
+            <PostBody content={post.content}/>
+          </article>
         )}
       </Container>
     </Layout>
@@ -45,15 +39,7 @@ export default function Post({post, morePosts, preview}) {
 }
 
 export async function getStaticProps({params}) {
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'date',
-    'slug',
-    'author',
-    'content',
-    'ogImage',
-    'coverImage',
-  ])
+  const post = getPostBySlug(params.slug, POST_METADATA_FIELDS)
   const content = await markdownToHtml(post.content || '')
 
   return {
@@ -70,13 +56,11 @@ export async function getStaticPaths() {
   const posts = getAllPosts(['slug'])
 
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+    })),
     fallback: false,
   }
 }
