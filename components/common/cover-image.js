@@ -1,11 +1,11 @@
 import cn from 'classnames'
 
-export default function CoverImage({title, src, slug}) {
+export default function CoverImage({title, src, slug, customStyles}) {
   const image = (
     <img
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn('w-full aspect-video')}
+      className={cn(`w-full aspect-video ${customStyles}`)}
     />
   )
   return (

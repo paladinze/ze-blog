@@ -1,6 +1,6 @@
 import CoverImage from '../common/cover-image'
 import PostTitle from './post-title'
-import FluidTabs from "../common/fluid-tabs";
+import PostMetaTabs from "./post-meta-tabs";
 import Badge, {BADGE_COLORS} from "../common/badge";
 
 export default function PostHeader(props) {
@@ -15,7 +15,7 @@ export default function PostHeader(props) {
         <CoverImage title={title} src={coverImage}/>
       </div>
       <div className="max-w-2xl mx-auto mb-12">
-        <FluidTabs
+        <PostMetaTabs
           date={`📆 ${date}`}
           repo={'🕹️ GitHub Repo'}
           repoLink={repoLink}

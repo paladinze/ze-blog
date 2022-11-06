@@ -5,23 +5,20 @@ import {TAGS} from "../../data/constants";
 function TabLink(props) {
   const {link, label, selected, onClick} = props;
 
+  const LinkComponent = <li
+    onClick={onClick}
+    className={cn("cursor-pointer mr-2 inline-block py-3 px-4 rounded-lg hover:text-stone-900 hover:bg-stone-100 dark:hover:bg-stone-700 dark:hover:text-white", {
+      "bg-stone-700 text-white": selected
+    })}>
+    {label}
+  </li>;
+
   if (!link) {
-    return <li
-      onClick={onClick}
-      className={cn("cursor-pointer mr-2 inline-block py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white", {
-        "bg-gray-800 text-white": selected
-      })}>
-      {label}
-    </li>
+    return LinkComponent
   }
 
   return <Link href={link}>
-    <li
-      className={cn("cursor-pointer mr-2 inline-block py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white", {
-        "bg-gray-800 text-white": selected
-      })}>
-      {label}
-    </li>
+    {LinkComponent}
   </Link>
 }
 
@@ -47,7 +44,7 @@ const tabsData = [
 export default function TabMenu(props) {
   const {selectedTag, setSelectedTag} = props;
   return <section>
-    <ul className="px-4 flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-500 ">
+    <ul className="px-4 flex flex-wrap text-sm lg:text-lg font-medium text-center text-stone-500 dark:text-stone-300 ">
       {tabsData.map(({label, link, tag}, index) => {
         return <TabLink
           key={index} label={label} link={link}

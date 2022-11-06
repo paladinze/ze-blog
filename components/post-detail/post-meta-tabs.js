@@ -6,7 +6,7 @@ const ACTION_TYPES = {
   DEMO: 'DEMO'
 };
 
-export default function FluidTabs(props) {
+export default function PostMetaTabs(props) {
   const {date, repo, repoLink, demo, demoLink} = props;
   const actionList = [
     {
@@ -26,7 +26,7 @@ export default function FluidTabs(props) {
   ]
 
   return <ul
-    className="truncate text-xs lg:text-base  font-medium text-center text-gray-500 rounded-lg divide-x divide-gray-200 shadow flex dark:divide-gray-700 dark:text-gray-500">
+    className="truncate text-xs lg:text-base font-medium text-center text-gray-500 rounded-lg divide-x divide-stone-200 shadow flex dark:divide-stone-700 dark:text-stone-500">
     {actionList.map((item, index) => {
       const enabled = !!item.url || item.type === ACTION_TYPES.DATE;
       const name = item.type === ACTION_TYPES.REPO && !item.url
@@ -36,7 +36,8 @@ export default function FluidTabs(props) {
       return <li className="w-full" key={index}>
         <a
           href={item.url} target={'_blank'}
-          className={cn("inline-block p-4 w-full bg-white  focus:outline-none dark:bg-gray-800", {
+          className={cn("inline-block p-4 w-full bg-white focus:outline-none dark:bg-stone-800",
+            {
             "dark:text-white dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-700": enabled
           })}>
           {name}
