@@ -8,6 +8,7 @@ tags: ['project']
 techStackFront: ['TypeScript', 'React', 'Monaco editor', 'WebGL', 'GLSL', 'Three.js']
 techStackBack: ['Node.js', 'Nest.js']
 techStackTools: ['Cypress', 'Nx', 'Rollup', 'Webpack']
+platforms: ['desktop']
 ---
 
 ## What

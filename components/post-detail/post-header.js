@@ -11,7 +11,7 @@ export default function PostHeader(props) {
   } = props;
 
   const demoLabel = platforms?.length > 0 && platforms[0] === PLATFORMS.DESKTOP
-    ? `🖥️ Demo` : '🔗 Live Demo'
+    ? `🖥️ Desktop` : '🔗 Live Demo'
 
   return (
     <div className={"mb-12"}>
@@ -24,7 +24,7 @@ export default function PostHeader(props) {
           date={`📆 ${date}`}
           repo={'🕹️ GitHub Repo'}
           repoLink={repoLink}
-          demo={`${demoLabel}`}
+          demo={demoLabel}
           demoLink={projectLink}
         />
       </div>
