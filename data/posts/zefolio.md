@@ -7,6 +7,7 @@ date: '2022-11-13'
 tags: ['project']
 techStackFront: ['TypeScript', 'React', 'WebGL', 'Three.js', 'React-Three-Fiber']
 techStackTools: ['Cypress', 'Nx']
+platforms: ['desktop']
 ---
 
 ## What

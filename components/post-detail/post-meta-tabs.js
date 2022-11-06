@@ -38,7 +38,7 @@ export default function PostMetaTabs(props) {
           href={item.url} target={'_blank'}
           className={cn("inline-block p-4 w-full bg-white focus:outline-none dark:bg-stone-800",
             {
-            "dark:text-white dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-700": enabled
+            "capitalize dark:text-white dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-700": enabled
           })}>
           {name}
         </a>

@@ -2,12 +2,17 @@ import CoverImage from '../common/cover-image'
 import PostTitle from './post-title'
 import PostMetaTabs from "./post-meta-tabs";
 import Badge, {BADGE_COLORS} from "../common/badge";
+import {PLATFORMS} from "../../data/constants";
 
 export default function PostHeader(props) {
   const {
     title, coverImage, date,
-    projectLink, repoLink, techStackFront, techStackBack, techStackTools
+    projectLink, repoLink, techStackFront, techStackBack, techStackTools, platforms
   } = props;
+
+  const demoLabel = platforms?.length > 0 && platforms[0] === PLATFORMS.DESKTOP
+    ? `🖥️ Demo` : '🔗 Live Demo'
+
   return (
     <div className={"mb-12"}>
       <PostTitle>{title}</PostTitle>
@@ -19,7 +24,7 @@ export default function PostHeader(props) {
           date={`📆 ${date}`}
           repo={'🕹️ GitHub Repo'}
           repoLink={repoLink}
-          demo={'🔗 Live demo'}
+          demo={`${demoLabel}`}
           demoLink={projectLink}
         />
       </div>

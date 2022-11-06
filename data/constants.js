@@ -1,3 +1,7 @@
+export const PLATFORMS = {
+  'DESKTOP': 'desktop'
+}
+
 export const THEME_MODE = {
   DARK: 'dark',
   DAY: 'day',
@@ -14,6 +18,7 @@ export const POST_METADATA_FIELDS = [
   'techStackFront',
   'techStackBack',
   'techStackTools',
+  'platforms',
   'content',
   'excerpt',
   'externalLink'
