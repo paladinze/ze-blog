@@ -9,7 +9,7 @@ export default function PostHeader(props) {
     projectLink, repoLink
   } = props;
   return (
-    <>
+    <div className={"mb-12"}>
       <PostTitle>{title}</PostTitle>
       <div className="max-w-2xl mx-auto mb-4 md:mb-8">
         <CoverImage title={title} src={coverImage}/>
@@ -23,6 +23,6 @@ export default function PostHeader(props) {
           demoLink={projectLink}
         />
       </div>
-    </>
+    </div>
   )
 }

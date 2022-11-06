@@ -6,7 +6,7 @@ date: '2021-12-14'
 tags: ['project']
 ---
 
-# eslint-formatter-bottleneck
+## What
 
 An Eslint formatter that only shows what matters
 
