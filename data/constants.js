@@ -8,6 +8,9 @@ export const POST_METADATA_FIELDS = [
   'coverImage',
   'projectLink',
   'repoLink',
+  'techStackFront',
+  'techStackBack',
+  'techStackTools',
   'content',
   'excerpt',
   'externalLink'

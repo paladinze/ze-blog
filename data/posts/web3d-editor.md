@@ -5,9 +5,12 @@ projectLink: 'https://static.res.qq.com/nav/web3d/editor/index.html?w3d=https://
 repoLink: 
 date: '2021-12-25'
 tags: ['project']
+techStackFront: ['TypeScript', 'React', 'Monaco editor', 'WebGL', 'GLSL', 'Three.js']
+techStackBack: ['Node.js', 'Nest.js']
+techStackTools: ['Cypress', 'Nx', 'Rollup', 'Webpack']
 ---
 
-## Project background
+## What
 
 This is an in-house Web3D editor project inspired by José Ferrão's [nunuStudio](https://github.com/tentone/nunuStudio). It modernized and improved on many aspects of the original design, while borrowing ideas from other web-based WebGL frameworks/editors such A-Frame and PlayCanvas. Here are some of the highlights:
 
