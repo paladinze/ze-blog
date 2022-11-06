@@ -36,7 +36,7 @@ export function Job(props) {
     <h3 className="mb-2 text-lg md:text-1xl  tracking-tighter leading-tight">
       {props.title}
     </h3>
-    <div>{`${2021} - ${2022}`}</div>
+    <div>{`${props.startYear} - ${props.endYear}`}</div>
   </div>
 }
 
