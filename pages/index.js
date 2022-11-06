@@ -30,7 +30,7 @@ export default function Index({allPosts}) {
           <TabMenu
             selectedTag={tag}
             setSelectedTag={setSelectedTag}/>
-          <PostList posts={filteredPosts} />
+          <PostList posts={filteredPosts}/>
         </Container>
       </Layout>
     </>

@@ -1,4 +1,7 @@
-export const CMS_NAME = 'Markdown'
+export const THEME_MODE = {
+  DARK: 'dark',
+  DAY: 'day',
+}
 
 export const POST_METADATA_FIELDS = [
   'title',

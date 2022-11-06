@@ -1,7 +1,7 @@
 
 export default function Intro() {
     return (
-        <section className="flex-col flex items-center mt-16 ">
+        <section className="flex-col flex items-center mt-4 ">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight">
                 ZE.
             </h1>
