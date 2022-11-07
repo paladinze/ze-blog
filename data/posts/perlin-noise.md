@@ -41,6 +41,9 @@ The implementation for noise function is borrowed from [patriciogonzalezvivo/GLS
 
 ## Finally, apply the noise on image texture
 
+### the original image
+![original image](/assets/blog/perlin-noise/screenshot-9.jpg)
+
 ### change texel position
 ![change texel position](/assets/blog/perlin-noise/screenshot-4.png)
 
