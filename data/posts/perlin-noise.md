@@ -1,11 +1,11 @@
 ---
 title: 'Perlin Noise'
 coverImage: '/assets/blog/perlin-noise/cover.jpeg'
-projectLink: 
-repoLink: 
+projectLink: 'https://shader-noise.shaderly.com'
+repoLink: 'https://github.com/paladinze/guts/tree/main/apps/cg/shader-noise'
 date: '2022-10-10'
 tags: ['lab']
-techStackFront: ['JavaScript', 'WebGL', 'Three.js']
+techStackFront: ['TypeScript', 'WebGL', 'Three.js']
 ---
 
 ## What
