@@ -47,6 +47,9 @@ The implementation for noise function is borrowed from [patriciogonzalezvivo/GLS
 ### change texel position
 ![change texel position](/assets/blog/perlin-noise/screenshot-4.png)
 
+### apply noise on the texture plane
+![apply noise on the texture plane](/assets/blog/perlin-noise/screenshot-10.png)
+
 ### change texel position with noise
 ![texel position with noise](/assets/blog/perlin-noise/cover.jpeg)
 
