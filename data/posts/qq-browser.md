@@ -3,7 +3,7 @@ title: 'QQ Browser Mobile'
 coverImage: '/assets/blog/qq-browser/cover.jpg'
 projectLink: 'https://apps.apple.com/cn/app/qq%E6%B5%8F%E8%A7%88%E5%99%A8-%E6%90%9C%E7%B4%A2%E6%96%B0%E9%97%BB%E5%B0%8F%E8%AF%B4%E6%96%87%E4%BB%B6/id370139302'
 repoLink: 
-date: '2021-12-20'
+date: '2021-12-05'
 tags: ['project']
 techStackFront: ['TypeScript', 'React', 'Hippy/React Native']
 techStackTools: ['Jest', 'in-house CICD tools', 'TAPD (Jira-like)']

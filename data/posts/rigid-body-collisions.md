@@ -3,7 +3,7 @@ title: 'Rigid Body Collisions'
 coverImage: '/assets/blog/rigid-body-collision/cover.png'
 projectLink: 'https://collision.shaderly.com'
 repoLink: 'https://github.com/paladinze/guts/tree/main/apps/cg/r3f-physics'
-date: '2022-05-15'
+date: '2022-09-15'
 tags: ['lab']
 techStackFront: ['TypeScript', 'React', 'WebGL', 'Three.js', 'React-Three-Fiber', 'Rapier']
 techStackTools: ['Nx']
