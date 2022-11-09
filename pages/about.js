@@ -73,7 +73,7 @@ export default function About() {
           }
         </div>
         <h3 className="mb-4 text-lg md:text-1xl tracking-tighter leading-tight">
-          {"Tool"}
+          {"Website, app and Tool"}
         </h3>
         <div className="flex flex-row justify-left items-center flex-wrap">
           {

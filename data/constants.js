@@ -45,6 +45,11 @@ export const PROJECT_LINKS = [
     tag: TAGS.WEB3D
   },
   {
+    name: 'Rigid body collision',
+    url: 'https://collision.shaderly.com',
+    tag: TAGS.WEB3D
+  },
+  {
     name: 'Galaxy particle simulation',
     url: 'https://galaxy-olive.vercel.app/',
     tag: TAGS.WEB3D
@@ -54,9 +59,17 @@ export const PROJECT_LINKS = [
     url: 'https://github.com/paladinze/best-of-flutter',
     tag: TAGS.TOOL
   }, {
+    name: 'Course Review App',
+    url: 'http://huoshui.org',
+    tag: TAGS.TOOL
+  }, {
     name: 'ESLint Formatter Bottleneck',
     url: 'https://github.com/paladinze/eslint-formatter-bottleneck',
     tag: TAGS.TOOL
+  }, {
+    name: 'Perlin Noise shader',
+    url: 'https://shader-noise.shaderly.com',
+    tag: TAGS.LAB
   }, {
     name: '2048 - Angel Attack',
     url: 'https://2048.shaderly.com',
