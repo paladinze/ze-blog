@@ -1,6 +1,8 @@
 # Ze Blog
 
-A minimalistic blog based on markdown, React & Next.js
+A minimalistic and responsive blog based on markdown, React & Next.js
+
+![Ze Blog](public/assets/blog/zeblog/zeblog.png?raw=true "Ze-blog Preview")
 
 ### init
 
