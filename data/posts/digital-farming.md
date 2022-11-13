@@ -24,7 +24,7 @@ At first glance, it may seem strange to write an app for an app, when there was 
 
 ![ecosystem](/assets/blog/farming/runtime.png)
 
-WeChat is what we call a "super app" (just like Facebook). Naturally, it provides many interfaces for triggering native functions (payment, location service) or displaying native components. As the hosting platform, WeChat is a like an Operating System in that it's in charge of creating Sandboxes and orchestrate communications with the WebView. Although WeChat mini programs is based on JavaScript, **it's not single-threaded!** For performance and security reason, mini programs are designed to have two threads. One responsible for the UI (the WebView Layer), another responsible for the logic (the Logic Layer). In many situations, this setup proves to be more performant or secure compare to regular web apps.
+WeChat is what we call a "super app" (just like Facebook). Naturally, it provides many interfaces for triggering native functions (payment, location service) or displaying native components. As the hosting platform, WeChat is a like an Operating System in that it's in charge of creating sandboxes and orchestrate communications with the WebView. Although WeChat mini programs is based on JavaScript, **it's not single-threaded!** For performance and security reason, mini programs are designed to have two threads. One responsible for the UI (the WebView Layer), another responsible for the logic (the Logic Layer). In many situations, this setup proves to be more performant or secure compare to regular web apps.
 
 ## A port and a rewrite
 
@@ -32,7 +32,7 @@ WeChat is what we call a "super app" (just like Facebook). Naturally, it provide
 
 ![digital farming in Thailand](/assets/blog/farming/kaset-go.png)
 
-The original app was written in React Native. Naturally, most of the business logic can be easily translated to any JavaScript ecosystem. However, RN has more freedom in terms of opening links, use cameras, even deep linking into other apps. It's also performant since RN merely control native UI components, the bottleneck is mostly on the communication channels across the JS bridge. On the flip side, WeChat mini program has a mix of native components provided by WeChat and webview UI components, and what can be done are always restricted by the WeChat platform.
+The original app was written in React Native. Naturally, most of the business logic can be easily translated to any JavaScript ecosystem. However, RN has more freedom in terms of opening links, use cameras and even deep linking into other apps. It's also performant since RN merely control native UI components, the bottleneck mostly lies in the communication channels across the JS bridge. On the flip side, WeChat mini program has a mix of native components provided by WeChat and webview UI components, and what can be done are always restricted by the WeChat platform.
 
 ### The rewrite
 
@@ -40,7 +40,7 @@ The original app was written in React Native. Naturally, most of the business lo
     <img src="/assets/blog/farming/entry.png" alt="drawing" />
 </div>
 
-To target WeChat and maximize reuse of existing resources, Taro was chosen as the hybrid development framework. It's an abstraction that sits above all existing mini-program frameworks and React Native. It's framework-agnostic in terms of UI, thanks to its runtime, which is based on Web Components (using Stencil at the time of the rewrite). 
+To target WeChat and maximize reuse of existing resources, `Taro` was chosen as the main hybrid development framework. It's an abstraction that sits above all existing mini program frameworks and React Native. It's framework-agnostic in terms of UI, thanks to its runtime, which is based on Web Components (using Stencil at the time of the rewrite). 
 
 ![WeChat mini program](/assets/blog/farming/screenshot-all.jpeg)
 
