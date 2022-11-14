@@ -61,11 +61,11 @@ export default function About() {
       </Section>
 
       <Section>
-        <SubTitle text={'💎 Project'}/>
+        <SubTitle text={'💎 Featured Projects'}/>
         <h3 className="mb-4 text-lg md:text-1xl tracking-tighter leading-tight">
           {"Immersive Experience"}
         </h3>
-        <div className="flex flex-row justify-left items-center flex-wrap">
+        <div className="mb-4 flex flex-row justify-left items-center flex-wrap">
           {
             PROJECT_LINKS
               .filter(item => item.tag === TAGS.WEB3D)
@@ -73,19 +73,19 @@ export default function About() {
           }
         </div>
         <h3 className="mb-4 text-lg md:text-1xl tracking-tighter leading-tight">
-          {"Website, app and Tool"}
+          {"Web Apps, Mobile apps and Tools"}
         </h3>
-        <div className="flex flex-row justify-left items-center flex-wrap">
+        <div className="mb-4 flex flex-row justify-left items-center flex-wrap">
           {
             PROJECT_LINKS
-              .filter(item => item.tag === TAGS.TOOL)
+              .filter(item => [TAGS.TOOL, TAGS.WEBAPP].includes(item.tag))
               .map(({name, url}, index) => <LinkButton name={name} url={url} key={index}/>)
           }
         </div>
         <h3 className="mb-4 text-lg md:text-1xl tracking-tighter leading-tight">
           {"Lab"}
         </h3>
-        <div className="flex flex-row justify-left items-center flex-wrap">
+        <div className="mb-4 flex flex-row justify-left items-center flex-wrap">
           {
             PROJECT_LINKS
               .filter(item => item.tag === TAGS.LAB)

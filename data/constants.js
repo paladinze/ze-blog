@@ -29,6 +29,7 @@ export const TAGS = {
   PROJECT: 'project',
   LAB: 'lab',
   WEB3D: 'web3d',
+  WEBAPP: 'webapp',
   TOOL: 'tool'
 }
 export const DEFAULT_TAG = TAGS.ALL;
@@ -36,43 +37,47 @@ export const DEFAULT_TAG = TAGS.ALL;
 export const PROJECT_LINKS = [
   {
     name: 'Zefolio',
-    url: 'https://shaderly.com',
+    url: 'posts/zefolio',
     tag: TAGS.WEB3D
   },
   {
     name: 'Mirage Web3D editor',
-    url: 'https://static.res.qq.com/nav/web3d/editor/index.html?w3d=https://static.res.qq.com/nav/web3d/editor/examples/beautiful-planet/app.w3d',
+    url: 'posts/web3d-editor',
     tag: TAGS.WEB3D
   },
   {
     name: 'Rigid body collision',
-    url: 'https://collision.shaderly.com',
+    url: 'posts/rigid-body-collisions',
     tag: TAGS.WEB3D
   },
   {
     name: 'Galaxy particle simulation',
-    url: 'https://galaxy-olive.vercel.app/',
+    url: 'posts/galaxy',
     tag: TAGS.WEB3D
   },
   {
     name: 'Best of Flutter',
-    url: 'https://github.com/paladinze/best-of-flutter',
+    url: 'posts/best-of-flutter',
     tag: TAGS.TOOL
   }, {
     name: 'Course Review App',
-    url: 'http://huoshui.org',
+    url: 'posts/huoshui-course-review',
     tag: TAGS.TOOL
   }, {
     name: 'ESLint Formatter Bottleneck',
-    url: 'https://github.com/paladinze/eslint-formatter-bottleneck',
+    url: 'posts/eslint-bottleneck-formatter',
     tag: TAGS.TOOL
   }, {
     name: 'Perlin Noise shader',
-    url: 'https://shader-noise.shaderly.com',
+    url: 'posts/perlin-noise',
     tag: TAGS.LAB
   }, {
-    name: '2048 - Angel Attack',
-    url: 'https://2048.shaderly.com',
+    name: 'Digital Farming App',
+    url: 'posts/digital-farming.md',
+    tag: TAGS.WEBAPP
+  }, {
+    name: 'StartCraft Distortion Shader',
+    url: 'posts/starcraft-shader.md',
     tag: TAGS.LAB
   }
 ]
