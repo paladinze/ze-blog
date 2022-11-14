@@ -54,15 +54,18 @@ export const PROJECT_LINKS = [
     name: 'Galaxy particle simulation',
     url: 'posts/galaxy',
     tag: TAGS.WEB3D
-  },
-  {
+  }, {
+    name: 'QQ Browser Mobile',
+    url: 'posts/qq-browser',
+    tag: TAGS.WEBAPP
+  }, {
     name: 'Best of Flutter',
     url: 'posts/best-of-flutter',
-    tag: TAGS.TOOL
+    tag: TAGS.WEBAPP
   }, {
     name: 'Course Review App',
     url: 'posts/huoshui-course-review',
-    tag: TAGS.TOOL
+    tag: TAGS.WEBAPP
   }, {
     name: 'ESLint Formatter Bottleneck',
     url: 'posts/eslint-bottleneck-formatter',
