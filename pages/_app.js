@@ -1,7 +1,7 @@
 import '../styles/index.css'
 import "prismjs/themes/prism-tomorrow.css";
 import useTheme from "../components/hooks/useTheme";
-import { Analytics } from '@vercel/analytics/react';
+import {Analytics} from '@vercel/analytics/react';
 
 export default function MyApp({Component, pageProps}) {
 
@@ -9,6 +9,6 @@ export default function MyApp({Component, pageProps}) {
 
   return <>
     <Component {...pageProps} />
-    <Analytics />
+    <Analytics/>
   </>
 }

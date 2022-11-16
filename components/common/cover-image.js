@@ -51,8 +51,8 @@ export default function CoverImage({title, src, customStyles}) {
         sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
-        placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+        // placeholder="blur"
+        // blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
         className={`w-full h-full object-cover ${customStyles}`}
       />
     </div>
