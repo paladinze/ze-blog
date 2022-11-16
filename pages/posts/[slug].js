@@ -10,6 +10,8 @@ import PostTitle from '../../components/post-detail/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import {META_POST_TITLE_SUFFIX, POST_METADATA_FIELDS} from "../../data/constants";
+import PostCommentsForm from "../../components/post-detail/post-comments–form";
+import Spacer from "../../components/common/spacer";
 
 export default function Post({post}) {
   const router = useRouter()
@@ -31,6 +33,8 @@ export default function Post({post}) {
             </Head>
             <PostHeader {...post} />
             <PostBody content={post.content}/>
+            <Spacer />
+            <PostCommentsForm />
           </article>
         )}
       </Container>
