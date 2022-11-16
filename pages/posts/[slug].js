@@ -9,15 +9,15 @@ import {getAllPosts, getPostBySlug} from '../../lib/api'
 import PostTitle from '../../components/post-detail/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
-import {POST_METADATA_FIELDS} from "../../data/constants";
+import {META_POST_TITLE_SUFFIX, POST_METADATA_FIELDS} from "../../data/constants";
 
-export default function Post({post, preview}) {
+export default function Post({post}) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404}/>
   }
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Container>
         <HeaderSignature/>
         {router.isFallback ? (
@@ -26,7 +26,7 @@ export default function Post({post, preview}) {
           <article className="mb-32">
             <Head>
               <title>
-                {post.title} | Ze Blog
+                {`${post.title}${META_POST_TITLE_SUFFIX}`}
               </title>
             </Head>
             <PostHeader {...post} />

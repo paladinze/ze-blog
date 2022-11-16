@@ -1,9 +1,14 @@
 import Head from 'next/head'
-import {HOME_OG_IMAGE_URL} from '../../data/constants'
+import {META_HOME_DESCRIPTION, META_HOME_TITLE} from '../../data/constants'
 
 export default function Meta() {
   return (
     <Head>
+      <title>{META_HOME_TITLE}</title>
+      <meta
+        name="description"
+        content={META_HOME_DESCRIPTION}
+      />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -21,17 +26,12 @@ export default function Meta() {
         sizes="16x16"
         href="/favicon/favicon-16x16.png"
       />
-      <link rel="manifest" href="/favicon/site.webmanifest" />
-      <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <meta name="msapplication-TileColor" content="#000000" />
-      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-      <meta name="theme-color" content="#000" />
-      <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="description"
-        content={`A portfolio of Ze's thoughts, stories and dreams.`}
-      />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <link rel="manifest" href="/favicon/site.webmanifest"/>
+      <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1"/>
+      <meta name="msapplication-TileColor" content="#000000"/>
+      <meta name="theme-color" content="#000"/>
+      <meta property="og:image" content={'/assets/blog/zefolio/zefolio.jpg'}/>
     </Head>
   )
 }

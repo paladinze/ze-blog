@@ -6,7 +6,7 @@ import {getAllPosts} from '../lib/api'
 import Head from 'next/head'
 import TabMenu from "../components/menu/tab-menu";
 import {useMemo, useState} from "react";
-import {DEFAULT_TAG, POST_METADATA_FIELDS, TAGS} from "../data/constants";
+import {DEFAULT_TAG, META_HOME_TITLE, POST_METADATA_FIELDS, TAGS} from "../data/constants";
 
 
 export default function Index({allPosts}) {
@@ -22,9 +22,6 @@ export default function Index({allPosts}) {
   return (
     <>
       <Layout>
-        <Head>
-          <title>Ze Cheng</title>
-        </Head>
         <Container>
           <Intro/>
           <TabMenu
