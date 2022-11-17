@@ -55,7 +55,7 @@ export default function PostCommentsForm() {
         <div>
           <button type="submit"
                   className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-black rounded-lg">
-            Post comment
+            Submit comment
           </button>
         </div>
       </form>
