@@ -3,6 +3,8 @@ export const META_POST_TITLE_SUFFIX = ' | Ze Blog'
 export const META_HOME_DESCRIPTION = 'A portfolio of Ze Cheng\'s thoughts, stories and dreams.'
 export const POST_DETAIL_SIGNATURE_TEXT = 'ZE.'
 
+export const DB_CONNECTION_URL = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_CLUSTER}.${process.env.MONGODB_DB}.mongodb.net/?retryWrites=true&w=majority`;
+
 export const PLATFORMS = {
   'DESKTOP': 'desktop'
 }

@@ -1,11 +1,11 @@
 import {MongoClient} from "mongodb";
+import {DB_CONNECTION_URL} from "../../../data/constants";
 
 export default async function handler(req, res) {
   const slug = req.query.slug;
 
-  const dbClient = await MongoClient.connect("dummy_url")
+  const dbClient = await MongoClient.connect(DB_CONNECTION_URL)
   const db = dbClient.db();
-
 
   if (req.method === 'GET') {
     const comments = db.collection('comments')
