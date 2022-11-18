@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "build:static": "next export",
     "start": "npm run build && next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

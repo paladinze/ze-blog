@@ -33,8 +33,8 @@ export default function Post({post}) {
             </Head>
             <PostHeader {...post} />
             <PostBody content={post.content}/>
-            {/*<Spacer />*/}
-            {/*<PostCommentsForm slug={post.slug} />*/}
+            <Spacer classname={"my-12"}/>
+            <PostCommentsForm slug={post.slug} />
           </article>
         )}
       </Container>

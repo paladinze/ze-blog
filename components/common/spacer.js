@@ -1,7 +1,7 @@
-export default function Spacer() {
+export default function Spacer(props) {
   return (
-    <div className="inline-flex justify-center items-center w-full">
-      <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
+    <div className={`inline-flex justify-center items-center w-full`}>
+      <hr className={`w-96 h-px bg-stone-200 border-0 dark:bg-stone-700 ${props.classname}`}/>
     </div>
   )
 }
