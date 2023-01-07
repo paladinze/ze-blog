@@ -5,6 +5,7 @@ A minimalistic and responsive blog based on markdown, React & Next.js
 ![Ze Blog](public/assets/blog/zeblog/zeblog.png?raw=true "Ze-blog Preview")
 
 ## Features
+- minimalistic design
 - fully responsive
 - dark mode support
 - markdown support

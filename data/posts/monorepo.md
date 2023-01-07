@@ -12,21 +12,21 @@ platforms: ['desktop']
 ---
 
 ## What
-The following is just a summary of my personal experience of working with monorepos at work and in personal projects in the **JavaScript context**. Since the concept of monorepos wasn't invented until the start of 21st century, what I wrote here may not stand the test of time. Please take everything with a grain of salt.
+This is a summary of my personal experiences in working with JavaScript based monorepos at work and in personal projects. Since the concept of monorepos wasn't invented until the start of the 21st century, what I write here may not stand the test of time. Please take everything with a grain of salt.
 
-For a living example of a modern JavaScript monorepo, you can take a look at my personal [Nx-based monorepo](https://github.com/paladinze/guts).
+For a living example of a modern JavaScript monorepo, you can take a look at my personal [Nx-based digital garden](https://github.com/paladinze/guts).
 
 ## The Birth of monorepo
 ![folder](/assets/blog/monorepo/folder.png)
 
-At the very beginning, monorepo was purely a way of organizing code. It is more of a coding practice than hard science. The trend started when some smart guy discovered that he/she can put all his/her code into a single folder and upload them to a remote version control tool (possibly Perforce back then). 
+At the very beginning, monorepo was purely a way of organizing code. It was more of a coding practice than hard science. The trend started when some smart guy discovered that he/she can put all his/her code into a single folder and upload them to a remote version control tool (possibly Perforce back then). 
 
 However, despite its humble beginning, monorepo today carries way more importance than just code organization. It's now the basis of CI and CD, and it's also the infrastructure that glues all modern coding practices and digital assets together.
 
 ## Why monorepo today
 ![youtube comments](/assets/blog/monorepo/comment.png)
 
-Different engineers and organizations have different views on monorepos. There are also many solutions in this space, with vastly different goals. Google, Microsoft and many other tech giants have their in-house build and repo solutions. It's their means to manage overwhelming amount of code assets. But apparently, not everyone is convinced with [this approach](https://youtu.be/W71BTkUbdqE). The massive infrastructure cost and human resource cost may not justify the investments. At least it's a decision that needs to be constantly debated.
+Different engineers and organizations have different views on monorepos. There are also many solutions in this space, with vastly different goals. Google, Microsoft and many other tech giants have their in-house build and code management solutions. It's their means to manage overwhelming amount of code assets. But apparently, not everyone is convinced with [this approach](https://youtu.be/W71BTkUbdqE). The massive infrastructure cost and human resource cost may not justify the investments. At least it's a decision that needs to be constantly debated.
 
 To provide a dev experience on par with polyrepo, custom file systems, custom build systems (e.g. Bazel) and custom version control systems (e.g. Piper) needs to be built. Additionally, there needs to be new ways of managing and testing change-sets, new ways of managing permissions and conducting code reviews.
 
@@ -82,7 +82,7 @@ In the JavaScript space, the three most popular tools are Lerna, Nx and Turborep
 
 ![good](/assets/blog/monorepo/silver-bullet.jpeg)
 
-There is silver bullet in this world, as long as you choose the proper constraints. For personal projects working with common tech stacks that need reasonably optimized build and linter rules. Tools like Nx and Turborepo are real godsends.  
+There <strong>are</strong> silver bullets in this world, as long as you can reduce the problem space with proper constraints. For personal projects working with common tech stacks that need reasonably optimized build and linter rules, tools like Nx and Turborepo are real godsends.  
 
 
 ## Examples of frontend monorepos
