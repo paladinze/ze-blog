@@ -4,7 +4,7 @@ coverImage: '/assets/blog/monorepo/cover.png'
 projectLink: 'https://github.com/paladinze/guts'
 repoLink: 'https://github.com/paladinze/guts'
 date: '2022-03-02'
-tags: ['lab']
+tags: ['thoughts']
 techStackFront: ['TypeScript', 'React', 'Next.js', 'Storybook']
 techStackBack: ['Node.js', 'Nest.js']
 techStackTools: ['Nx', 'Webpack', 'SWC', 'Cypress', 'ESLint', 'Prettier']

@@ -35,6 +35,7 @@ export const TAGS = {
   ALL: 'all',
   PROJECT: 'project',
   LAB: 'lab',
+  THOUGHTS: 'thoughts',
   WEB3D: 'web3d',
   WEBAPP: 'webapp',
   TOOL: 'tool'
