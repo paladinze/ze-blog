@@ -7,7 +7,7 @@ date: '2022-09-15'
 tags: ['lab']
 techStackFront: ['TypeScript', 'React', 'WebGL', 'Three.js', 'React-Three-Fiber', 'Rapier']
 techStackTools: ['Nx']
-platforms: ['desktop']
+platforms: ['desktop', 'mobile']
 ---
 
 ## What

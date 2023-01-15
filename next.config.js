@@ -8,4 +8,6 @@ const config = {
   },
 }
 
-module.exports = config;
+const withTM = require('next-transpile-modules')(['@paladinze/fantasia-react']);
+
+module.exports = withTM(config);

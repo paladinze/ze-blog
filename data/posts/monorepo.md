@@ -8,7 +8,7 @@ tags: ['thoughts']
 techStackFront: ['TypeScript', 'React', 'Next.js', 'Storybook']
 techStackBack: ['Node.js', 'Nest.js']
 techStackTools: ['Nx', 'Webpack', 'SWC', 'Cypress', 'ESLint', 'Prettier']
-platforms: ['desktop']
+platforms: ['desktop', 'mobile']
 ---
 
 ## What

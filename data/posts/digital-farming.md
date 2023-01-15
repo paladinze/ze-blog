@@ -7,7 +7,7 @@ date: '2021-02-02'
 tags: ['project']
 techStackFront: ['TypeScript', 'React', 'React Native', 'Taro hybrid framework', 'WeChat Mini Program']
 techStackBack: ['Node.js', 'Express', 'Discourse', 'Docker', 'Container Services']
-platforms: ['desktop']
+platforms: ['desktop', 'mobile']
 ---
 
 ## What
