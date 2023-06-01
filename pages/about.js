@@ -55,6 +55,7 @@ export default function About() {
 
       <Section>
         <SubTitle text={'🧮 Employment'}/>
+        <Job title={'Senior Software Engineer, Microsoft'} startYear={2023} endYear={'Present'}/>
         <Job title={'Senior Software Engineer, Tencent'} startYear={2021} endYear={2022}/>
         <Job title={'Software Consultant, Thoughtworks'} startYear={2019} endYear={2021}/>
         <Job title={'Software Engineer, IBM Canada'} startYear={2016} endYear={2018}/>
